@@ -37,6 +37,8 @@ namespace Problems.ProjectEuler
             }
 
             Console.WriteLine($"Longest chain under {maxStartingNumber} starts from {startingNumber} and it has {longestChain} chains.");
+            Assert.That(startingNumber, Is.EqualTo(910107));
+            Assert.That(longestChain, Is.EqualTo(475));
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Microsoft.VisualStudio.TestPlatform.Utilities;
 
 namespace Problems.GeeksForGeeks
 {
@@ -20,7 +21,6 @@ namespace Problems.GeeksForGeeks
                 }
 
                 lastNegativeItemIndex++;
-
                 if (lastNegativeItemIndex == i)
                 {
                     continue;
@@ -31,7 +31,9 @@ namespace Problems.GeeksForGeeks
                 input[lastNegativeItemIndex] = tmp;
             }
 
-            Console.WriteLine(string.Join(',', input));
+            var outputString = string.Join(", ", input);
+            Console.WriteLine(outputString);
+            Assert.That(outputString, Is.EqualTo("-12, -13, -5, -7, -3, -6, 5, 6, 11"));
         }
     }
 }
