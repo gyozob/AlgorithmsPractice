@@ -8,7 +8,7 @@
         [Test]
         [TestCase(new int[] { 10, 20, 15, 2, 23, 90, 67 })]
         [TestCase(new int[] { 30, 20, 15, 2, 23, 90, 67 })]
-        [TestCase(new int[] { 30, 20, 15, 2, 23, 90, 100 })]
+        [TestCase(new int[] { 31, 20, 15, 2, 23, 90, 100 })]
         [TestCase(new int[] { 10, 10, 10 })]
         public void Run(int[] input) 
         {
