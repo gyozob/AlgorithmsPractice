@@ -6,13 +6,16 @@
     public class FindAPeakElementWhichIsNotSmallerThanItsNeighbours
     {
         [Test]
-        public void Run() 
+        [TestCase(new int[] { 10, 20, 15, 2, 23, 90, 67 })]
+        [TestCase(new int[] { 30, 20, 15, 2, 23, 90, 67 })]
+        [TestCase(new int[] { 30, 20, 15, 2, 23, 90, 100 })]
+        [TestCase(new int[] { 10, 10, 10 })]
+        public void Run(int[] input) 
         {
-            var input = new[] { 10, 20, 15, 2, 23, 90, 67 };
-            for (int i = 1; i < input.Length - 1; i++)
+            for (int i = 0; i < input.Length; i++)
             {
-                var isCurrentGreaterThanNext = input[i] > input[i + 1];
-                if (input[i] > input[i - 1] && isCurrentGreaterThanNext)
+                var isCurrentGreaterThanNext = i < input.Length -1 && input[i] > input[i + 1];
+                if (i == 0 || (input[i] >= input[i - 1]) && (i == input.Length - 1 || input[i] >= input[i + 1]))
                 {
                     Console.WriteLine(input[i]);
                     continue;
