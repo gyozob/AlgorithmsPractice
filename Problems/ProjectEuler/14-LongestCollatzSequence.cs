@@ -1,4 +1,4 @@
-namespace Problems
+namespace Problems.ProjectEuler
 {
     /// <summary>
     /// Link to the problem https://projecteuler.net/problem=14
