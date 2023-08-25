@@ -1,5 +1,8 @@
 ﻿namespace Problems.Codility
 {
+    /// <summary>
+    /// Number of visible nodes in a binary tree
+    /// </summary>
     public class BinaryTreeNumberOfVisibleNodes
     {
         [Test]
