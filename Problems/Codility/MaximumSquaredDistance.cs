@@ -1,5 +1,8 @@
 ﻿namespace Problems.Codility
 {
+    /// <summary>
+    /// Maximum squared distance that can be made using provided 4 values representing the coordinates of 2 points: (a, b) (c, d)
+    /// </summary>
     public class MaximumSquaredDistance
     {
         [Test]
